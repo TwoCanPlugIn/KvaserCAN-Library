@@ -107,6 +107,7 @@ HEADERS = -I$(SOURCE_DIR) \
 
 CFLAGS += -O2 -Wall -Wno-parentheses \
 	-fno-strict-aliasing \
+	-mmacosx-version-min=10.9 \
 	$(DEFINES) \
 	$(HEADERS)
 
