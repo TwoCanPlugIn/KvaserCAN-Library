@@ -106,12 +106,11 @@ HEADERS = -I$(SOURCE_DIR) \
 	-I$(WRAPPER_DIR)
 
 CFLAGS += -O2 -Wall -Wno-parentheses \
-	-fno-strict-aliasing \
-	-mmacosx-version-min=10.9 \
+	-fno-strict-aliasing -mmacosx-version-min=10.9 \
 	$(DEFINES) \
 	$(HEADERS)
 
-CXXFLAGS += -g -Wall -Wextra -pthread \
+CXXFLAGS += -g -Wall -Wextra -pthread -mmacosx-version-min=10.9 \
 	$(DEFINES) \
 	$(HEADERS)
 
